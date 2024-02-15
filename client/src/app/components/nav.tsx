@@ -5,6 +5,7 @@ import { IoMdExit, IoMdLogIn } from "react-icons/io";
 import { GrShop } from "react-icons/gr";
 import { FaUser } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavMobile from "@/components/NavMobile";
 // import { actionLogout } from "./actionLogout";
 
 const Nav = () => {
@@ -73,8 +74,8 @@ const Nav = () => {
               </form>
             </div>
           </div>
-          <div className="md:hidden text-4xl">
-            <GiHamburgerMenu />
+          <div className="md:hidden text-black text-4xl">
+            <NavMobile  />
           </div>
         </nav>
       </main>

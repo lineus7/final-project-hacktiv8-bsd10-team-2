@@ -1,6 +1,4 @@
-// ChatbotComponent.js
 
-import React from 'react';
 
 const ChatbotComponent = () => {
   const embeddedChatbotConfig = {
@@ -18,15 +16,8 @@ const ChatbotComponent = () => {
       ` }} defer />
       <script
         src="https://www.chatbase.co/embed.min.js"
-        // domain="www.chatbase.co"
         defer
       ></script>
-      {/* <iframe
-        src="https://www.chatbase.co/chatbot-iframe/BVTJmnpC9S-c_V7JlTxDV"
-        width="100%"
-        style={{ height: '100%', minHeight: '700px' }}
-        frameBorder="0"
-      ></iframe> */}
     </>
   );
 };
