@@ -4,8 +4,9 @@ import Link from "../../../node_modules/next/link";
 import { IoMdExit, IoMdLogIn } from "react-icons/io";
 import { GrShop } from "react-icons/gr";
 import { FaUser } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
 import NavMobile from "@/components/NavMobile";
+import { RiLoginBoxFill } from "react-icons/ri";
+
 // import { actionLogout } from "./actionLogout";
 
 const Nav = () => {
@@ -65,6 +66,11 @@ const Nav = () => {
                 className="text-3xl flex  font-[300] justify-center items-center">
                 <FaUser />
               </Link>
+              <Link
+                href={"/login"}
+                className="text-3xl flex  font-[300] justify-center items-center">
+                <RiLoginBoxFill />
+              </Link>
               <form>
                 <button
                   className="text-3xl flex  font-[300] justify-center items-center"
@@ -75,7 +81,7 @@ const Nav = () => {
             </div>
           </div>
           <div className="md:hidden text-black text-4xl">
-            <NavMobile  />
+            <NavMobile />
           </div>
         </nav>
       </main>

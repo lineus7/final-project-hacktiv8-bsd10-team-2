@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { FaDonate } from "react-icons/fa";
+import Link from "next/link";
 import { FcDonate } from "react-icons/fc";
 
 export default function Home() {
@@ -62,9 +61,9 @@ export default function Home() {
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
               }}>
-              <button className="text-black w-[30%] max-md:w-2/3 hover:text-black hover:bg-green-500 duration-200 transition-all hover:ease-in-out text-lg font-bold py-3 px-7 rounded-full bg-yellow-500">
+              <Link href={"/register"} className="text-black w-[30%] max-md:w-2/3 hover:text-black hover:bg-green-500 duration-200 transition-all hover:ease-in-out text-lg font-bold py-3 px-7 rounded-full bg-yellow-500">
                 Sign Up
-              </button>
+              </Link>
             </motion.div>
             <div className="text-9xl absolute -bottom-10 left-[45vw] text-yellow-400">
               <FcDonate />
